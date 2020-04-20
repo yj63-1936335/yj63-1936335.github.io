@@ -1,0 +1,19 @@
+h1 {text-decoration: underline;}
+p.a {font: 15px arial, sans-serif;}
+p.b {font: italic bold 12px/30px Georgia, serif;}
+.container {position: relative;text-align: center;color: red;}
+.centered {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+img.ex1 {margin: 20px;}
+p.dotted {border-style: dotted;}
+
+audio {
+  float: right;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 290px;
+  height: 30px;  
+}
