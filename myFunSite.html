@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>Bonchon Chicken</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("bonchon1.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 11am to 11pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Double-Fried<br>BBQ Chicken</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Double-Fried<br>BBQ Chicken</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Chicken</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Traditional</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sides</div>
+      </a>
+    </div>
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>WINGS</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.95</span></h1>
+      <p class="w3-text-grey">Small Size with 8 pcs</p>
+      <hr>
+   
+      <h1><b>DRUMSTICKS</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.95</span></h1>
+      <p class="w3-text-grey">Small Size with 4 pcs</p>
+      <hr>
+      
+      <h1><b>BONELESS WINGS</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.95</span></h1>
+      <p class="w3-text-grey">Small Size with 10 pcs</p>
+      <hr>
+      <h1><b>COMBO</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.95</span></h1>
+      <p class="w3-text-grey">4 Wings+ 2 Drumsticks</p>
+      <hr>
+      <h1><b>COMBO</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$24.95</span></h1>
+      <p class="w3-text-grey">8 Wings+ 4 Drumsticks</p>
+      <hr>
+      <h1><b>Sauce</b> <span class="w3-tag w3-grey w3-round">choose any</span><span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Spicy,soy garlic,sweet crunch or half & half</p>
+    </div>
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>BIBIBAP</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.95</span></h1>
+      <p class="w3-text-grey">White rice, quinoa, assorted seasonal vegetables and egg
+with Bonchon red pepper paste on the side.</p>
+      <hr>
+   
+      <h1><b>BULGOGI</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.95</span></h1>
+      <p class="w3-text-grey">Thinly sliced ribeye beef marinated with a homemade sauce,
+sautéed with mushrooms, scallions, and onions. Served
+with white rice. </p>
+      <hr>
+      
+      <h1><b>HOUSE FRIED RICE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.95</span></h1>
+      <p class="w3-text-grey">Fried rice, eggs, red bell pepper, onions and Bonchon Soy
+Garlic Sauce. </p>
+      <hr>
+      <h1><b>JAPCHAE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.95</span></h1>
+      <p class="w3-text-grey">Glass noodles, red pepper, carrots, onions, spinach,
+mushrooms and thinly sliced marinated beef stir-fried with
+Bonchon Soy Garlic Sauce and sesame oil. </p>
+    </div>
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>SEASONED
+FRIES</b> <span class="w3-tag w3-grey w3-round">NEW</span><span class="w3-right w3-tag w3-dark-grey w3-round">$7.95</span></h1>
+      <p class="w3-text-grey">French Fries tossed with
+house seasoning, parmesan
+cheese, topped with parsley
+flakes and a side of ketchup. </p>
+      <hr>
+   
+      <h1><b>ONION RINGS</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.95</span></h1>
+      <p class="w3-text-grey">Thick slices of onions in
+a crunchy batter served
+golden brown with a side of
+ketchup. </p>
+      <hr>
+      
+      <h1><b>KIMCHI</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.25</span></h1>
+      <p class="w3-text-grey">Kimchi is a national
+Korean dish consisting of
+fermented chili peppers on
+cabbage</p>
+      <hr>
+      
+      <h1><b>PICKLED RADISH</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.25</span></h1>
+      <p class="w3-text-grey">15 cal.</p>
+    </div><br>
+  </div>
+</div>
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>We created our signature sauce in Korea back in 2002, and have kept our original recipe ever since.
+Every piece of Bonchon chicken is double-fried, then hand brushed with our signature sauce. </p>
+    <p><strong>The Chicken?</strong> Yummy!<img src="bonchon-chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="bonchon-restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Location</b></h1>
+    
+    <div class="w3-row">
+      
+        <p>Seattle</p>
+        <p>Bonchon-First Hill</p>
+        <p>Address: 554 Broadway, Seattle, WA 98122</p>
+     
+      
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+<img src="bonchon3.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p>Find us at some address at some place or call us at (206) 420-8225</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+ 📞 206-386-8888 <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
